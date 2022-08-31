@@ -11,18 +11,17 @@
 </head>
 
 <body>
-    <section id='header' class="" style="height: auto;
-    text-align: center;
+    <section id='header' class="bg-auto md:bg-cover" style="
+    height: auto;
     background-image: url('./img/carn_3.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center center;
-    background-size: 100% auto;
-    
+    background-position: center center;    
     ">
 
-        <nav class="px-4 h-40  transition duration-500 sticky top-0 z-50 bg-[#333] md:bg-transparent" id="nav">
-            <div class="flex  items-center content-center pt-10 ">
+        <nav class="hidden md:block px-4   transition duration-500 sticky top-0 z-50 bg-[#333] md:bg-transparent"
+            id="nav">
+            <div class="flex  items-center content-center py-10 ">
                 <a href="#inici" class="flex place-content-center w-full md:w-auto ">
                     <img id='image'
                         src="https://lirp.cdn-website.com/f65a9c13/dms3rep/multi/opt/logo+vaca+blanc-9702295d-124w.png"
@@ -56,7 +55,8 @@
                 </div>
             </div>
         </nav>
-        <h1 id="inici" class="text-white  font-normal break-words font-['Old_Standard_TT'] py-20 tracking-wide"
+        <h1 id="inici"
+            class="text-white text-center  font-normal font-['Old_Standard_TT'] py-20 tracking-wide w-8/12 mx-auto"
             style="font-size:65px;">Vedella
             ecològica de
             Trullàs</h1>
@@ -378,7 +378,7 @@
             <img class="invisible xl:visible" style=" top:0;"
                 src="https://lirp.cdn-website.com/md/dmtmpl/75b84aeb-8702-4d74-b3b6-9dc85c76a9e6/dms3rep/multi/opt/white_diagonale_2-2304w.png"
                 alt="" srcset="">
-            <div class="flex flex-col  w-8/12 mx-auto py-20 xl:py-44 ">
+            <div class="flex flex-col justify-center justify-items-center  w-8/12 mx-auto py-20 xl:py-44 ">
 
 
                 <h2 class="text-white text-5xl font-normal text-center break-words font-['Old_Standard_TT']"
@@ -394,13 +394,13 @@
                     També pots trucar al telèfon +34 622 32 24 92
                 </p>
                 <form id="my-form" action="https://formspree.io/f/moqbvnnk" method="POST"
-                    class="text-white my-10 flex flex-col  gap-y-4 text-left  mx-auto">
+                    class="text-white my-10 flex flex-col place-content-center gap-y-4 text-left ">
                     <label for="Name">Nom</label>
-                    <input class="px-4 h-8 text-black rounded-xl " type="text">
+                    <input class="px-4 h-8 text-black rounded-xl" type="text">
                     <label for="mobile">Telèfon</label>
-                    <input class="px-4 h-8 text-black rounded-xl " type="tel">
+                    <input class="px-4 h-8 text-black rounded-xl" type="tel">
                     <label for="email">Email *</label>
-                    <input class="px-4 h-8 text-black rounded-xl " type="email" name="email">
+                    <input class="px-4 h-8 text-black rounded-xl" type="email" name="email">
                     <label for="message">Missatge * </label>
                     <textarea name="message" class="resize-none text-black p-4 rounded-xl" id="" cols="30"
                         rows="8"></textarea>
@@ -420,9 +420,16 @@
 
         </section>
         <section id='footer'>
-            <div class="bg-gray-200 h-64">
-                footer
-            </div>
+            <footer class="footer footer-center  w-full p-4 bg-gray-300 text-gray-800">
+                <div class="text-center">
+                    <p>
+                        Copyright © 2022 -
+                        <a href="www.vedellaecologica.cat">Vedella ecològica de Trullàs</a>
+                        -
+                        <a class="font-semibold" href="mailto:jaumeserraa@gmail.com">Jaume Serra</a>
+                    </p>
+                </div>
+            </footer>
         </section>
     </main>
 </body>
