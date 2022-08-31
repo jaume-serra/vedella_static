@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./index.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
 </head>
 
 <body>
-    <section id='header' class="" style="height: 28rem;
+    <section id='header' class="" style="height: auto;
     text-align: center;
     background-image: url('./img/carn_3.jpg');
     background-repeat: no-repeat;
@@ -19,16 +21,16 @@
     
     ">
 
-        <nav class="px-4 h-36  transition duration-500 sticky top-0 z-50" id="nav">
+        <nav class="px-4 h-40  transition duration-500 sticky top-0 z-50 bg-[#333] md:bg-transparent" id="nav">
             <div class="flex  items-center content-center pt-10 ">
-                <a href="#" class="flex items-center">
+                <a href="#inici" class="flex place-content-center w-full md:w-auto ">
                     <img id='image'
                         src="https://lirp.cdn-website.com/f65a9c13/dms3rep/multi/opt/logo+vaca+blanc-9702295d-124w.png"
-                        class="h-32 w-28 ml-28 -mr-20 stroke-2 transition duration-500 hover:scale-110" />
+                        class="h-20 w-16 md:h-32 md:w-28 md:ml-28 md:-mr-20 stroke-2 transition duration-500 hover:scale-110" />
                 </a>
-                <div class="mx-auto">
+                <div class="mx-auto hidden md:flex ">
                     <ul class="flex  gap-x-10 justify-center font-medium ">
-                        <li class="transition duration-200 hover:scale-110 ">
+                        <li class="invisible lg:visible transition duration-200 hover:scale-110 ">
                             <a href="#quisom"
                                 class=" change-color py-2 pr-4 pl-3 text-white hover:border-b hover:border-[#c1cc5d] hover:text-[#c1cc5d]  ">QUI
                                 SOM ?</a>
@@ -54,7 +56,7 @@
                 </div>
             </div>
         </nav>
-        <h1 class="text-white  font-normal break-words font-['Old_Standard_TT'] py-20 tracking-wide"
+        <h1 id="inici" class="text-white  font-normal break-words font-['Old_Standard_TT'] py-20 tracking-wide"
             style="font-size:65px;">Vedella
             ecològica de
             Trullàs</h1>
@@ -63,12 +65,13 @@
     <!-- <img src="./img/linia_diganonal"  class='-mt-64  w-full  '> -->
     <main class="">
         <section id='quisom' class="pt-20  ">
-            <div class="flex gap-x-36 w-8/12 mx-auto">
-                <div class="">
+            <div class="lg:flex lg:gap-x-36  w-8/12 mx-auto">
+                <div>
                     <h2 class="py-10 font-normal text-5xl text-[#c1cc5d] tracking-wide"
                         style="font-family: Old Standard TT;">DE LA PASTURA A LA TAULA</h2>
 
-                    <p class="text-base leading-8  font-light break-words  text-gray-700" style="font-family: Roboto;">
+                    <p class="text-center md:text-left text-base leading-8  font-light break-words  text-gray-700"
+                        style="font-family: Roboto;">
                         Així
                         de senzill. Les nostres vaques estan tot
                         l'any a la
@@ -77,15 +80,15 @@
                         de farratges i
                         cereals conreats sense utilitzar cap adob químic ni fertilitzants.
                         <br>
-
+                        <br>
                         Som partidaris de potenciar el sistema immunitari de l'animal com a millor eina per la seva
                         salut.
                         <br>
-
+                        <br>
                         Produïm una carn de qualitat i busquem un comerç de proximitat.
                     </p>
                 </div>
-                <div>
+                <div class="mx-auto flex place-content-center py-10">
                     <img style="border-radius: 25%"
                         src="https://lirp.cdn-website.com/f65a9c13/dms3rep/multi/opt/IMG-20200602-135910-Original-393w.jpg">
                 </div>
@@ -93,17 +96,17 @@
 
         </section>
         <section id='historia' class="pt-20  ">
-            <div class="flex gap-x-36 w-8/12 mx-auto">
-                <div class="w-6/12 ">
+            <div class="lg:flex lg:gap-x-36 w-8/12 mx-auto text-center">
+                <div class="hidden lg:block lg:w-6/12 ">
                     <img style="border-radius: 25%" class="h-full w-full"
                         src="https://lirp.cdn-website.com/f65a9c13/dms3rep/multi/opt/just+i+vedell-698w.png" alt="">
                 </div>
-                <div class="w-6/12">
-                    <h2 class="py-10 font-normal text-5xl text-center text-[#c1cc5d] tracking-wide"
+                <div class="w-full lg:w-6/12">
+                    <h2 class="py-10 font-normal text-5xl  text-[#c1cc5d] tracking-wide"
                         style="font-family: Old Standard TT;">LA NOSTRA HISTÒRIA</h2>
 
-                    <p class="text-base leading-6  font-light break-words text-center text-gray-700"
-                        style="font-family: Roboto; ">Som veterinaris apassionats pels
+                    <p class="text-base leading-6  font-light break-words  text-gray-700" style="font-family: Roboto; ">
+                        Som veterinaris apassionats pels
                         animals i els boscos. Vàrem començar el ramat de vaques l'any 1992, i la nostra obsessió ha
                         estat
                         sempre integrar tot el sistema agrosilvopastural aconseguint la màxima sostenibilitat productiva
@@ -123,7 +126,10 @@
                         temps d'alletament dels vedells i minimitzar la fase d'engreix.
                     </p>
                 </div>
-
+                <div class="py-10  lg:hidden ">
+                    <img style="border-radius: 25%;" class="h-full w-full"
+                        src="https://lirp.cdn-website.com/f65a9c13/dms3rep/multi/opt/just+i+vedell-698w.png" alt="">
+                </div>
             </div>
 
         </section>
@@ -135,67 +141,72 @@
         background-position: 50% 50%;
         background-size:cover">
 
-            <div class="flex w-8/12 mx-auto py-20">
-                <h2 style="font-family: Playfair Display; font-size: 55px; " class="text-white text-right w-1/6">El
+            <div class="flex flex-col md:flex-row w-8/12 mx-auto py-20">
+                <h2 style="font-family: Playfair Display; font-size: 55px; "
+                    class="text-white text-center py-10 md:py-0 md:text-right  w-8/12 md:w-4/12 lg:w-1/6 mx-auto">El
                     nostre
                     impacte al planeta</h2>
                 <div class="w-5/6 flex flex-col ml-10  gap-y-10">
-                    <div class="grid grid-cols-3 gap-4 p-10 text-white "
+                    <div class="grid grid-cols-1 lg:grid-cols-3 divide-y-2 lg:divide-y-0 gap-4 p-10 text-white "
                         style="background-color:rgba(194,182,184, 0.9);">
                         <div class=" ">
                             <h3 style="font-family: Roboto;" class="font-bold text-base leading-6">REDUIR LA CÀRREGA
                                 FORESTAL</h3>
                             <p style="font-family: Roboto Mono;"
-                                class="font-normal text-md text-left mt-5 leading-normal">
+                                class="hidden lg:block font-normal text-md text-left mt-5 leading-normal">
                                 Mitjançant la pastura
                                 del sotabosc es redueix la càrrega de biomassa i es realitza una gestió natural del
                                 bosc,
                                 disminuint el risc d'incendis.</p>
                         </div>
                         <div class=" ">
-                            <h3 style="font-family: Roboto;" class="font-bold text-base leading-6">RAÇA AUTÒCTONA I <br>
+                            <h3 style="font-family: Roboto;" class="font-bold text-base leading-6 mt-4 lg:mt-0">RAÇA
+                                AUTÒCTONA I <br>
                                 RÚSTICA
                             </h3>
                             <p style="font-family: Roboto Mono;"
-                                class="font-normal text-md text-left mt-5 leading-normal">
+                                class="hidden lg:block font-normal text-md text-left mt-5 leading-normal">
                                 Mantenim la vaca Bruna del Pirineu, ja que estan altament integrades a l'agroecosistema.
                             </p>
                         </div>
                         <div class=" ">
-                            <h3 style="font-family: Roboto;" class="font-bold text-base leading-6">QUALITAT DEL PRODUCTE
+                            <h3 style="font-family: Roboto;" class="font-bold text-base leading-6 mt-4 lg:mt-0">QUALITAT
+                                DEL PRODUCTE
                                 FINAL</h3>
                             <p style="font-family: Roboto Mono;"
-                                class="font-normal text-md text-left mt-5 leading-normal">
+                                class="hidden lg:block font-normal text-md text-left mt-5 leading-normal">
                                 L'alimentació
                                 natural dels vedells permet obtenir una carn amb més vitamines i propietats
                                 antioxidants.
                             </p>
                         </div>
                     </div>
-                    <div class="grid grid-cols-3 gap-4 p-10 text-white "
+                    <div class="grid grid-cols-1 lg:grid-cols-3 divide-y-2 lg:divide-y-0 gap-4 p-10 text-white "
                         style="background-color:rgba(194,182,184, 0.9);">
                         <div class=" ">
                             <h3 style="font-family: Roboto;" class="font-bold text-base leading-6">ALIMENTS SENSE
                                 QUÍMICS
                             </h3>
                             <p style="font-family: Roboto Mono;"
-                                class="font-normal text-md text-left mt-5 leading-normal leading-normal">
+                                class="hidden lg:block font-normal text-md text-left mt-5 leading-normal leading-normal">
                                 Totes les exigències de l'agricultura ecològica beneficien a la salut del consumidor.
                             </p>
                         </div>
                         <div class=" ">
-                            <h3 style="font-family: Roboto;" class="font-bold text-base leading-6">BENESTAR ANIMAL</h3>
+                            <h3 style="font-family: Roboto;" class="font-bold text-base leading-6 mt-4 lg:mt-0 ">
+                                BENESTAR ANIMAL</h3>
                             <p style="font-family: Roboto Mono;"
-                                class="font-normal text-md text-left mt-5 leading-normal">
+                                class="hidden lg:block font-normal text-md text-left mt-5 leading-normal">
                                 Es potencia el
                                 sistema immunitari natural dels animals mitjançant una bona alimentació i condicions de
                                 vida. </p>
                         </div>
                         <div class=" ">
-                            <h3 style="font-family: Roboto;" class="font-bold text-base leading-6">TANQUEM EL CERCLE
+                            <h3 style="font-family: Roboto;" class="font-bold text-base leading-6 mt-4 lg:mt-0">TANQUEM
+                                EL CERCLE
                             </h3>
                             <p style="font-family: Roboto Mono;"
-                                class="font-normal text-md text-left mt-5 leading-normal">
+                                class="hidden lg:block font-normal text-md text-left mt-5 leading-normal">
                                 Des de l'ordi
                                 fins als naps, tots els productes que utilitzem són conreats per nosaltres. </p>
                         </div>
@@ -223,7 +234,7 @@
                             style="fill:none;stroke:#FFFF;stroke-width:2px" />
                     </svg>
                     <path style="fill:none" d="M0 0h64v64H0z" />
-                    <h3 class="text-2xl" style="font-family: Old Stabdard TT;">DEL PLAT A LA TAULA</h3>
+                    <h3 class="text-2xl hidden lg:block " style="font-family: Old Stabdard TT;">DEL PLAT A LA TAULA</h3>
                 </div>
 
                 <div style="justify-content: center;
@@ -250,7 +261,7 @@
                             </g>
                         </g>
                     </svg>
-                    <h3 class="text-2xl" style="font-family: Old Stabdard TT;">DES DE 1994</h3>
+                    <h3 class="text-2xl hidden lg:block" style="font-family: Old Stabdard TT;">DES DE 1994</h3>
                 </div>
                 <div style="justify-content: center;
   align-items: center;" class="flex flex-col gap-y-4">
@@ -259,7 +270,7 @@
                         <path
                             d="m16.951 89.082 46.272 23.74a1.469 1.469 0 0 0 .146.067 1.368 1.368 0 0 0 .126.058 1.3 1.3 0 0 0 1.009 0 1.373 1.373 0 0 0 .126-.058 1.467 1.467 0 0 0 .146-.067l46.272-23.74a1.439 1.439 0 0 0 .785-1.282h.006V40.2a1.43 1.43 0 0 0-.076-.442 1.434 1.434 0 0 0-.264-.478v-.006a1.442 1.442 0 0 0-.552-.409L87.852 27.011l-23.2-11.9a1.439 1.439 0 0 0-1.311 0l-23.2 11.9-23.082 11.847a1.446 1.446 0 0 0-.734.681 1.429 1.429 0 0 0-.152.544v.01c0 .034-.01.066-.01.1V87.8h.006a1.439 1.439 0 0 0 .782 1.282zm2.1-46.527 21.1 10.823 22.406 11.5v44.369l-43.5-22.319zm46.393 66.687V64.873l14.505-7.442v8.449a1.446 1.446 0 0 0 2.637.82l5.642-6.945 3.816 1.605a1.441 1.441 0 0 0 2-1.327h.006V50.2l14.9-7.643v44.366zm17.4-53.294 5.009-2.57 3.308-1.7v6.183l-2.747-1.151a1.441 1.441 0 0 0-1.74.391l-3.831 4.715zM64 18.01l22.541 11.565 20.7 10.62L93 47.5 49.756 25.318zM41.458 29.575l5.142-2.639 43.167 22.146-8.375 4.368-43.234-22.181zM35 32.887l43.24 22.184L64 62.379 41.458 50.814l-20.7-10.619z" />
                     </svg>
-                    <h3 class="text-2xl" style="font-family: Old Stabdard TT;">ELABORACIÓ DE LOTS</h3>
+                    <h3 class="text-2xl hidden lg:block" style="font-family: Old Stabdard TT;">ELABORACIÓ DE LOTS</h3>
                 </div>
 
             </div>
@@ -273,8 +284,8 @@
             background-size:cover">
 
 
-                <div class="flex  justify-center  gap-x-10 mx-auto w-5/6">
-                    <div class="flex flex-col w-4/12 my-20 text-center py-5" style="background-color:rgba(194,182,184, 0.9); justify-content: center;
+                <div class="flex flex-col  lg:flex-row  justify-center  gap-x-10 mx-auto w-8/12 lg:w-5/6">
+                    <div class="flex flex-col w-full my-10 lg:w-4/12 lg:my-20 text-center py-5" style="background-color:rgba(194,182,184, 0.9); justify-content: center;
                     align-items: center;justify-content: center;
                     align-items: center;">
                         <svg class="w-16 h-16" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"
@@ -313,7 +324,7 @@
                         </p>
 
                     </div>
-                    <div class="flex flex-col w-4/12 my-20 text-center py-5" style="background-color:rgba(194,182,184, 0.9); justify-content: center;
+                    <div class="flex flex-col w-full my-10 lg:w-4/12 lg:my-20 text-center py-5" style="background-color:rgba(194,182,184, 0.9); justify-content: center;
                     align-items: center;">
                         <svg class="w-16 h-16" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"
                             xml:space="preserve"
@@ -356,23 +367,23 @@
             </div>
         </section>
 
-        <section id='contacte' style="height: auto;position: relative;
+        <section id='contacte' style="height: auto;
     background-image: url('https://www.collinsdictionary.com/images/full/forest_419496319_1000.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
-    background-size: 100% auto;
+    background-size: cover;
     
     ">
-            <img class="invisible xl:visible" style="position: absolute; top:0;"
+            <img class="invisible xl:visible" style=" top:0;"
                 src="https://lirp.cdn-website.com/md/dmtmpl/75b84aeb-8702-4d74-b3b6-9dc85c76a9e6/dms3rep/multi/opt/white_diagonale_2-2304w.png"
                 alt="" srcset="">
-            <div class="grid  place-items-center  w-8/12 mx-auto py-44">
+            <div class="flex flex-col  w-8/12 mx-auto py-20 xl:py-44 ">
 
 
-                <h2 class="text-white text-5xl font-normal break-words font-['Old_Standard_TT']"
+                <h2 class="text-white text-5xl font-normal text-center break-words font-['Old_Standard_TT']"
                     style="font-family: Roboto;">Contacta amb nosaltres</h2>
-                <p class="my-5 text-lg font-light text-white" style="font-family: Roboto;">
+                <p class="my-5 text-lg font-light  text-center text-white" style="font-family: Roboto;">
                     Vols saber més informació sobre els nostres productes?
                     <br>
                     Tens ganes de fer-nos una visita?
@@ -383,26 +394,30 @@
                     També pots trucar al telèfon +34 622 32 24 92
                 </p>
                 <form id="my-form" action="https://formspree.io/f/moqbvnnk" method="POST"
-                    class="text-white my-10 flex flex-col gap-y-4 md:w-5/12 text-left">
+                    class="text-white my-10 flex flex-col  gap-y-4 text-left  mx-auto">
                     <label for="Name">Nom</label>
-                    <input class="px-4 h-8 text-black rounded-xl" type="text">
+                    <input class="px-4 h-8 text-black rounded-xl " type="text">
                     <label for="mobile">Telèfon</label>
-                    <input class="px-4 h-8 text-black rounded-xl" type="tel">
+                    <input class="px-4 h-8 text-black rounded-xl " type="tel">
                     <label for="email">Email *</label>
-                    <input class="px-4 h-8 text-black rounded-xl" type="email" name="email">
+                    <input class="px-4 h-8 text-black rounded-xl " type="email" name="email">
                     <label for="message">Missatge * </label>
                     <textarea name="message" class="resize-none text-black p-4 rounded-xl" id="" cols="30"
                         rows="8"></textarea>
                     <button
-                        class="bg-white text-black border-[#c1cc5d] justify-items-center hover:text-white hover:bg-[#c1cc5d] hover:border-white border-2 rounded-xl h-10 text-xl"
+                        class="my-5 bg-white text-black border-[#c1cc5d]  hover:text-white hover:bg-[#c1cc5d] hover:border-white border-2 rounded-xl h-10 text-xl"
                         type="submit">Enviar</button>
                     <p class="text-lg" id="my-form-status"></p>
                 </form>
 
             </div>
-            <img class="invisible xl:visible" style="position: absolute; bottom:0;"
+            <img class="invisible xl:visible" style=" bottom:0;"
                 src="https://lirp.cdn-website.com/md/dmtmpl/75b84aeb-8702-4d74-b3b6-9dc85c76a9e6/dms3rep/multi/opt/white_diagonale_1-2304w.png"
                 alt="" srcset="">
+        </section>
+        <section id="mapa" class="py-20 ">
+            <div id="map" class="w-8/12 mx-auto" style="height:24rem;"></div>
+
         </section>
         <section id='footer'>
             <div class="bg-gray-200 h-64">
@@ -447,3 +462,7 @@
     }
     form.addEventListener("submit", handleSubmit)
 </script>
+
+<script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+    defer></script>
