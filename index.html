@@ -29,25 +29,25 @@
                 <div class="mx-auto">
                     <ul class="flex  gap-x-10 justify-center font-medium ">
                         <li class="transition duration-200 hover:scale-110 ">
-                            <a href="#"
+                            <a href="#quisom"
                                 class=" change-color py-2 pr-4 pl-3 text-white hover:border-b hover:border-[#c1cc5d] hover:text-[#c1cc5d]  ">QUI
                                 SOM ?</a>
                         </li>
                         <li class="transition duration-200 hover:scale-110">
-                            <a href="#"
+                            <a href="#historia"
                                 class="change-color py-2 pr-4 pl-3 text-white hover:border-b hover:border-[#c1cc5d] hover:text-[#c1cc5d]">HISTÒRIA</a>
                         </li>
                         <li class="transition duration-200 hover:scale-110">
-                            <a href="#"
+                            <a href="#impacte"
                                 class="change-color py-2 pr-4 pl-3 text-white hover:border-b hover:border-[#c1cc5d] hover:text-[#c1cc5d]">IMPACTE</a>
                         </li>
                         <li class="transition duration-200 hover:scale-110">
-                            <a href="#"
+                            <a href="#puntsdevenda"
                                 class="change-color py-2 pr-4 pl-3 text-white hover:border-b hover:border-[#c1cc5d] hover:text-[#c1cc5d]">PUNTS
                                 DE VENDA</a>
                         </li>
                         <li class="transition duration-200 hover:scale-110">
-                            <a href="#"
+                            <a href="#contacte"
                                 class="change-color py-2 pr-4 pl-3 text-white hover:border-b hover:border-[#c1cc5d] hover:text-[#c1cc5d]">CONTACTE</a>
                         </li>
                     </ul>
@@ -62,7 +62,7 @@
     </section>
     <!-- <img src="./img/linia_diganonal"  class='-mt-64  w-full  '> -->
     <main class="">
-        <section id='pastura' class="pt-20  ">
+        <section id='quisom' class="pt-20  ">
             <div class="flex gap-x-36 w-8/12 mx-auto">
                 <div class="">
                     <h2 class="py-10 font-normal text-5xl text-[#c1cc5d] tracking-wide"
@@ -85,15 +85,14 @@
                         Produïm una carn de qualitat i busquem un comerç de proximitat.
                     </p>
                 </div>
-                <div class="">
+                <div>
                     <img style="border-radius: 25%"
-                        src="https://lirp.cdn-website.com/f65a9c13/dms3rep/multi/opt/IMG-20200602-135910-Original-393w.jpg"
-                        alt="">
+                        src="https://lirp.cdn-website.com/f65a9c13/dms3rep/multi/opt/IMG-20200602-135910-Original-393w.jpg">
                 </div>
             </div>
 
         </section>
-        <section id='history' class="pt-20  ">
+        <section id='historia' class="pt-20  ">
             <div class="flex gap-x-36 w-8/12 mx-auto">
                 <div class="w-6/12 ">
                     <img style="border-radius: 25%" class="h-full w-full"
@@ -129,7 +128,7 @@
 
         </section>
 
-        <section id='impact' class="mt-20" style="
+        <section id='impacte' class="mt-20" style="
         text-align: center;
         background-image: url('./img/foto_impacte.jpg');
         background-repeat: no-repeat;
@@ -265,7 +264,7 @@
 
             </div>
         </section>
-        <section>
+        <section id="puntsdevenda">
             <h2 class="text-center text-5xl text-[#c1cc5d]" style="font-family: Old Standard TT;">PUNTS DE VENDA</h2>
             <div class="my-20" style="
             background-image: url('./img/foto_impacte.jpg');
@@ -356,32 +355,95 @@
                 </div>
             </div>
         </section>
-        <section id='contact'></section>
-        <form action="https://formspree.io/f/moqbvnnk" method="POST">
-            <label>El teu email
 
-            </label>
-            <input type="email" name="email">
-            <label>Missatge:
-            </label>
-            <textarea name="message" id="" cols="10" rows="10"></textarea>
+        <section id='contacte' style="height: auto;position: relative;
+    background-image: url('https://www.collinsdictionary.com/images/full/forest_419496319_1000.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: 100% auto;
+    
+    ">
+            <img class="invisible xl:visible" style="position: absolute; top:0;"
+                src="https://lirp.cdn-website.com/md/dmtmpl/75b84aeb-8702-4d74-b3b6-9dc85c76a9e6/dms3rep/multi/opt/white_diagonale_2-2304w.png"
+                alt="" srcset="">
+            <div class="grid  place-items-center  w-8/12 mx-auto py-44">
 
-            <button type="submit">Send email</button>
-        </form>
-        <section id='footer'></section>
+
+                <h2 class="text-white text-5xl font-normal break-words font-['Old_Standard_TT']"
+                    style="font-family: Roboto;">Contacta amb nosaltres</h2>
+                <p class="my-5 text-lg font-light text-white" style="font-family: Roboto;">
+                    Vols saber més informació sobre els nostres productes?
+                    <br>
+                    Tens ganes de fer-nos una visita?
+                    <br>
+                    <br>
+                    Envia'ns un missatge i ens posarem amb contacte amb vosaltres.
+                    <br>
+                    També pots trucar al telèfon +34 622 32 24 92
+                </p>
+                <form id="my-form" action="https://formspree.io/f/moqbvnnk" method="POST"
+                    class="text-white my-10 flex flex-col gap-y-4 md:w-5/12 text-left">
+                    <label for="Name">Nom</label>
+                    <input class="px-4 h-8 text-black rounded-xl" type="text">
+                    <label for="mobile">Telèfon</label>
+                    <input class="px-4 h-8 text-black rounded-xl" type="tel">
+                    <label for="email">Email *</label>
+                    <input class="px-4 h-8 text-black rounded-xl" type="email" name="email">
+                    <label for="message">Missatge * </label>
+                    <textarea name="message" class="resize-none text-black p-4 rounded-xl" id="" cols="30"
+                        rows="8"></textarea>
+                    <button
+                        class="bg-white text-black border-[#c1cc5d] justify-items-center hover:text-white hover:bg-[#c1cc5d] hover:border-white border-2 rounded-xl h-10 text-xl"
+                        type="submit">Enviar</button>
+                    <p class="text-lg" id="my-form-status"></p>
+                </form>
+
+            </div>
+            <img class="invisible xl:visible" style="position: absolute; bottom:0;"
+                src="https://lirp.cdn-website.com/md/dmtmpl/75b84aeb-8702-4d74-b3b6-9dc85c76a9e6/dms3rep/multi/opt/white_diagonale_1-2304w.png"
+                alt="" srcset="">
+        </section>
+        <section id='footer'>
+            <div class="bg-gray-200 h-64">
+                footer
+            </div>
+        </section>
     </main>
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
 
 </html>
+
+
+<script>
+    var form = document.getElementById("my-form");
+
+    async function handleSubmit(event) {
+        event.preventDefault();
+        var status = document.getElementById("my-form-status");
+        var data = new FormData(event.target);
+        fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+        }).then(response => {
+            if (response.ok) {
+                status.innerHTML = "Gràcies per enviar el missatge";
+                form.reset()
+            } else {
+                response.json().then(data => {
+                    if (Object.hasOwn(data, 'errors')) {
+                        status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                    } else {
+                        status.innerHTML = "Oops! Hi ha hagut un error al enviar el missatge"
+                    }
+                })
+            }
+        }).catch(error => {
+            status.innerHTML = "Oops! Hi ha hagut un error al enviar el missatge"
+        });
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
