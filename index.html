@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <section id='header' class="bg-auto md:bg-cover" style="
+    <section id='header' class="bg-cover" style="
     height: auto;
     background-image: url('./img/index_carn-min.jpg');
     background-repeat: no-repeat;
@@ -90,7 +90,7 @@
             style="font-size:65px; font-family: Source Sans Pro;">Vedella
             ecològica de
             Trullàs</h1>
-        <img style=" bottom:0;" class="2xl:hidden"
+        <img style=" bottom:0;" class="diagonal"
             src="https://lirp.cdn-website.com/md/dmtmpl/75b84aeb-8702-4d74-b3b6-9dc85c76a9e6/dms3rep/multi/opt/white_diagonale_1-2304w.png"
             alt="" srcset="">
     </section>
@@ -411,7 +411,7 @@
     background-size: cover;
     
     ">
-            <img class="invisible xl:visible  2xl:hidden" style=" top:0;"
+            <img class="invisible xl:visible diagonal" style=" top:0;"
                 src="https://lirp.cdn-website.com/md/dmtmpl/75b84aeb-8702-4d74-b3b6-9dc85c76a9e6/dms3rep/multi/opt/white_diagonale_2-2304w.png"
                 alt="" srcset="">
             <div class="flex flex-col justify-center justify-items-center  w-8/12 mx-auto py-20 xl:py-44 ">
@@ -448,7 +448,7 @@
                 </form>
 
             </div>
-            <img class="invisible xl:visible 2xl:hidden" style=" bottom:0;"
+            <img class="invisible xl:visible diagonal" style=" bottom:0;"
                 src="https://lirp.cdn-website.com/md/dmtmpl/75b84aeb-8702-4d74-b3b6-9dc85c76a9e6/dms3rep/multi/opt/white_diagonale_1-2304w.png"
                 alt="" srcset="">
         </section>
@@ -553,5 +553,11 @@
 <style>
     html {
         scroll-behavior: smooth
+    }
+
+    @media screen and (min-width: 1960px) {
+        .diagonal {
+            display: none;
+        }
     }
 </style>
